@@ -33,7 +33,6 @@ $fallback-colors: (DarkOrange DarkCyan Teal White Gainsboro);
 html,body{
    width: 100vw;
    height: 100vh;
-   overflow:auto;
    font: 15px 'Lexend Deca', sans-serif;
    @include bg-color(map-get($colors, very-light-gray),nth($fallback-colors, 5));
 }
