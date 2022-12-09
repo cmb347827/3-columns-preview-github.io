@@ -10,7 +10,7 @@ $grid__rows: 4;
 }
 
 $colors: (bright-orange:hsl(31, 77%, 52%),dark-cyan:hsl(184, 100%, 22%),very-dark-cyan:hsl(179, 100%, 13%),transparent-white:hsla(0, 0%, 100%, 0.75),very-light-gray:hsl(0, 0%, 95%));
-$fallback-colors: (DarkOrange DarkCyan Teal White Gainsboro);
+$fallback-colors: (DarkOrange DarkCyan Teal White Gainsboro #2E8B57);
 
 @mixin gray($color,$fallback-color){
     /*Change SVG circle background color */
@@ -95,7 +95,7 @@ main {
 	    @include bg-color(map-get($colors, very-dark-cyan),nth($fallback-colors,3));
 		border-radius: 0px 0px 11px 11px;
 		.circle{
-	        @include gray(map-get($colors, very-dark-cyan),nth($fallback-colors,3));
+	        @include gray(map-get($colors, very-dark-cyan),nth($fallback-colors,6));
 	    }
 		.btn{
 		    &:hover{
