@@ -1,0 +1,90 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  font: 15px 'Lexend Deca', sans-serif;
+  background-color: Gainsboro;
+  background-color: #f2f2f2; }
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  overflow: auto;
+  margin: 100px 0px; }
+
+.h3 {
+  color: Gainsboro;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  margin-top: 3em; }
+
+.container {
+  max-width: 375px;
+  background-color: Gainsboro;
+  background-color: #f2f2f2;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap; }
+  .container .btn {
+    border-radius: 15px; }
+  .container p {
+    color: White;
+    color: rgba(255, 255, 255, 0.75);
+    padding-bottom: 7em; }
+  .container__col {
+    flex-flow: column wrap;
+    flex-basis: 100%; }
+  .container__row {
+    height: 100px;
+    flex-basis: 25%; }
+  .container section:nth-of-type(1) {
+    background-color: DarkOrange;
+    background-color: #e38826;
+    /* top-left top-right bottom-right bottom-left */
+    border-radius: 11px 11px 0px 0px; }
+    .container section:nth-of-type(1) .btn:hover {
+      background-color: Gainsboro;
+      background-color: #f2f2f2;
+      color: DarkOrange;
+      color: #e38826; }
+  .container section:nth-of-type(2) {
+    background-color: DarkCyan;
+    background-color: #006970; }
+    .container section:nth-of-type(2) .btn:hover {
+      background-color: Gainsboro;
+      background-color: #f2f2f2;
+      color: DarkCyan;
+      color: #006970; }
+  .container section:nth-of-type(3) {
+    background-color: Teal;
+    background-color: #004241;
+    border-radius: 0px 0px 11px 11px; }
+    .container section:nth-of-type(3) .circle {
+      /*Change SVG circle background color */
+      fill: #404040;
+      fill: #212121; }
+    .container section:nth-of-type(3) .btn:hover {
+      background-color: Gainsboro;
+      background-color: #f2f2f2;
+      color: Teal;
+      color: #004241; }
+  @media screen and (min-width: 1140px) {
+    .container {
+      min-width: 1140px;
+      flex-flow: row wrap; }
+      .container__col {
+        flex-basis: 33.3333333333%; }
+      .container section:nth-of-type(1) {
+        border-radius: 11px 0px 0px 11px; }
+      .container section:nth-of-type(3) {
+        border-radius: 0px 11px 11px 0px; } }
+
+section {
+  padding: 25px; }
+
+/*# sourceMappingURL=3-column-preview-card-component.css.map */
